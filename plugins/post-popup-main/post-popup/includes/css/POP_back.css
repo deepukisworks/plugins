@@ -1,0 +1,21 @@
+.cp_table input[type=color], .cp_table input[type=email], .cp_table input[type=number], .cp_table input[type=password], .cp_table input[type=text] {
+    width: 100%;
+}
+tr.cp_top {
+    text-align: left;
+}
+.cp_table h4 {
+    padding: 7px 5px;
+    margin: 5px 0px;
+    color: #000;
+    background-color: #b4b6b5;
+}
+.custom_part {
+    width: 40%;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+.custom_part img {
+    max-width: 100%;
+}

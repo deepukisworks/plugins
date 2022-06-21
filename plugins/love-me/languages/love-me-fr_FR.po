@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Love me\n"
+"POT-Creation-Date: 2017-11-24 11:12+0100\n"
+"PO-Revision-Date: 2017-11-24 11:12+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: love.php\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: love.php:106
+msgid "Plugin settings"
+msgstr "Paramètres du plugin"
+
+#: love.php:113
+msgid "Disable plugin’s CSS"
+msgstr "Désactiver le CSS du plugin"
+
+#: love.php:121
+msgid "Disable plugin’s default dashicon"
+msgstr "Désactiver la CSS dashicon"
+
+#: love.php:129
+msgid "Button location"
+msgstr "Emplacement"
+
+#: love.php:137
+msgid "Display like button on the following post types"
+msgstr "Afficher sur les types de contenus suivants"
+
+#: love.php:144
+msgid ""
+"This plugin displays a very simple and customisable like button for your "
+"posts or any custom post type."
+msgstr ""
+"Ce plugin affiche un bouton like très simple et personnalisable pour vos "
+"posts ou n'importe quel type de post personnalisé."
+
+#: love.php:145
+msgid "One shortcode available:"
+msgstr "Un shortcode disponible :"
+
+#: love.php:149
+#, php-format
+msgid "%s which displays the like button and the number of likes received"
+msgstr "% s qui affiche le bouton \"J'aime\" et le nombre de \"J'aime\" reçus"
+
+#: love.php:162
+msgid "Check this to disable our CSS and use your own custom CSS rules."
+msgstr ""
+"Cochez cette option pour désactiver notre CSS et utiliser vos propres règles "
+"CSS personnalisées."
+
+#: love.php:172
+msgid ""
+"Check this to disable our heart dashicon and use your own custom button "
+"appearance."
+msgstr ""
+"Cochez cette option pour désactiver notre dashicon coeur et utilisez votre "
+"propre apparence de bouton personnalisé."
+
+#: love.php:183
+msgid "Before the content"
+msgstr "Avant le contenu"
+
+#: love.php:189
+msgid "After the content"
+msgstr "Après le contenu"
+
+#: love.php:192
+msgid "If nothing is checked, it will add the shortcode in the PHP code"
+msgstr "Si rien n'est coché, il faudra ajouter le shortcode dans le code PHP"
+
+#: love.php:218 love.php:398
+msgid "Love me Settings"
+msgstr "Paramètres Love me"
+
+#: love.php:232
+msgid "Configuration Love me"
+msgstr "Configuration Love me"
+
+#. Plugin Name of the plugin/theme
+#: love.php:232
+msgid "Love me"
+msgstr "Love me"
+
+#: love.php:246
+msgid "Sorry, your nonce did not verify."
+msgstr "Désolé, votre nonce n'a pas vérifié."
+
+#: love.php:398
+msgid "Like button"
+msgstr "Bouton Like"
+
+#: love.php:415
+msgid "Current count:"
+msgstr "Nombre actuel :"
+
+#: love.php:429
+msgid "Hide like button for this post"
+msgstr "Masquer le bouton Like pour ce post"
+
+#: love.php:431
+msgid "Manual update"
+msgstr "Mise à jour manuelle"
+
+#: love.php:433
+msgid "New total:"
+msgstr "Nouveau total :"
+
+#: love.php:433
+msgid "You’ll need to update your post to save changes."
+msgstr ""
+"Vous devez mettre à jour votre publication pour enregistrer les "
+"modifications."
+
+#. Description of the plugin/theme
+msgid ""
+"Display a very simple and customisable like button for your posts or any "
+"custom post type."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Agence Whodunit"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.whodunit.fr/"
+msgstr ""
+
+#~ msgid "Disable CSS plugin"
+#~ msgstr "Désactiver CSS plugin"
+
+#~ msgid "Disable dashicons"
+#~ msgstr "Désactiver CSS dashicons"
+
+#~ msgid "Show button"
+#~ msgstr "Afficher le bouton"
+
+#~ msgid "Show likes on"
+#~ msgstr "Afficher les Likes sur"
+
+#~ msgid "Custom HTML shortcode like content"
+#~ msgstr "Personnaliser le HTML : shortcode like"
+
+#~ msgid "Custom HTML shortcode show like"
+#~ msgstr "Personnaliser le HTML : shortcode show like"
+
+#~ msgid ""
+#~ "The plugin allows to give the possibility of « Like » articles, pages or "
+#~ "any other custom post types.\n"
+#~ "It works with 2 shortcodes:\n"
+#~ "- <strong>[love_me]</strong> allows « Like » and displays the number of « "
+#~ "Like »\n"
+#~ "- <strong>[love_me_count]</strong> just display the number of « Like "
+#~ "» (recommended use sidebar)"
+#~ msgstr ""
+#~ "Le plugin permet de donner la possibilité de « Like » articles, pages ou "
+#~ "tout autre types de contenus.\n"
+#~ "Il fonctionne avec 2 shortcodes:\n"
+#~ "- <strong>[love_me]</strong> permet de « Like » et affiche le nombre de "
+#~ "« Like »\n"
+#~ "- <strong>[love_me_count]</strong> affiche simplement le nombre de "
+#~ "« Like » (utilisation recommandée : sidebar)"
+
+#~ msgid "before the_content()"
+#~ msgstr "Avant the_content()"
+
+#~ msgid "after the_content()"
+#~ msgstr "Après the_content()"
+
+#~ msgid ""
+#~ "If nothing is checked, it will add the shortcode \"[love_me]\" in the PHP "
+#~ "code"
+#~ msgstr ""
+#~ "Si rien n'est coché, il faudra ajouter le shortcode \"[love_me]\" dans le "
+#~ "code PHP"
+
+#~ msgid ""
+#~ "You can modify the shortcode but you must keep the parameter: tag:[love]"
+#~ msgstr ""
+#~ "Vous pouvez modifier le shortcode mais vous devez conserver le paramètre: "
+#~ "tag: [love]"
+
+#~ msgid "Reset shortcode?"
+#~ msgstr "Réinitialiser le shortcode?"
+
+#~ msgid ""
+#~ "You can modify the shortcode but you must keep the 3 parameters: "
+#~ "attribute:[id_post], tag:[love], tag:[msg]"
+#~ msgstr ""
+#~ "Vous pouvez modifier le shortcode mais vous devez conserver les 3 "
+#~ "paramètres: attribute: [id_post], tag: [love], tag: [msg]"
+
+#~ msgid "- You already liked this article"
+#~ msgstr "- Vous aimé déjà cet article"
+
+#~ msgid "Like"
+#~ msgstr "Like"
+
+#~ msgid "Likes"
+#~ msgstr "Likes"
+
+#~ msgid "A problem has occurred!"
+#~ msgstr "Un problème est survenu !"
+
+#~ msgid "Thank you for your vote"
+#~ msgstr "Merci pour votre vote"
+
+#~ msgid "Numbers like:"
+#~ msgstr "Nombres de likes :"
+
+#~ msgid "Check the box to change the number of likes"
+#~ msgstr "Cochez la case pour changer le nombre de likes"
+
+#~ msgid "Update Likes"
+#~ msgstr "Mettre à jour les likes"
+
+#~ msgid ""
+#~ "The plugin allows to give the possibility of « Like » articles, pages or "
+#~ "any other custom post types."
+#~ msgstr ""
+#~ "Le plugin permet de donner la possibilité de « Like » articles, pages ou "
+#~ "tout autre types de contenus."
+
+#~ msgid "Kantari Samy, Developer Back @ Whodunit"
+#~ msgstr "Kantari Samy, Developer Back @ Whodunit"
+
+#~ msgid "Love me desc"
+#~ msgstr "Love me desc"
+
+#~ msgid "Settings Likes"
+#~ msgstr "Paramètres Likes"
+
+#~ msgid "Change the settings of the Love me plugin"
+#~ msgstr "Changer les paramètres du plugin Love me"
+
+#~ msgid ""
+#~ "The plugin allows to give the possibility of « Like » articles, pages or "
+#~ "any other custom post types.\n"
+#~ "\n"
+#~ "It works with 2 shortcodes:\n"
+#~ "\n"
+#~ "- <strong>[love_me]</strong> allows « Like » and displays the number of « "
+#~ "Like »\n"
+#~ "\n"
+#~ "- <strong>[love_me_count]</strong> just display the number of « Like "
+#~ "» (recommended use sidebar)"
+#~ msgstr ""
+#~ "Le plugin permet de donner la possibilité de « Like » articles, pages ou "
+#~ "tout autre types de contenus.\n"
+#~ "Il fonctionne avec 2 shortcodes:\n"
+#~ "- <strong>[love_me]</strong> permet de « Like » et affiche le nombre de "
+#~ "« Like »\n"
+#~ "- <strong>[love_me_count]</strong> affiche simplement le nombre de "
+#~ "« Like » (barre d'utilisation recommandée)"
+
+#~ msgid ""
+#~ "The plugin allows to give the possibility of \"Like\" articles, pages or "
+#~ "any other custom post types.\n"
+#~ "It works with 2 shortcodes:\n"
+#~ "<br>- <strong>[love_me]</strong> allows \"Like\" and displays the number "
+#~ "of \"Like\"\n"
+#~ "<br>- <strong>[love_me_count]</strong> just display the number of \"Like"
+#~ "\" (recommended use sidebar)"
+#~ msgstr ""
+#~ "Le plugin permet de donner la possibilité de « Like » articles, pages ou "
+#~ "tout autre types de contenus.\n"
+#~ "Il fonctionne avec 2 shortcodes: \\ n\n"
+#~ "<br>- <strong> [love_me] </ strong> permet de « Like » et affiche le "
+#~ "nombre de « Like »\n"
+#~ "<br>- <strong> [love_me_count] </ strong> affiche simplement le nombre de "
+#~ "« Like » (barre d'utilisation recommandée)"
+
+#~ msgid ""
+#~ "If nothing is checked, it will be necessary to add the shortcodes in the "
+#~ "PHP code"
+#~ msgstr ""
+#~ "Si rien n'est coché, il faudra ajouter les shortcodes dans le code PHP"

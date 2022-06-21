@@ -1,0 +1,579 @@
+# Copyright (C) 2020 Ultimate Member
+# This file is distributed under the same license as the Ultimate Member - myCRED plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Member - myCRED 2.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/um-mycred\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-12-16T16:24:28+02:00\n"
+"PO-Revision-Date: 2020-12-16 18:48+0200\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Domain: um-mycred\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+
+#. Plugin Name of the plugin
+msgid "Ultimate Member - myCRED"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "http://ultimatemember.com/extensions/mycred"
+msgstr ""
+
+#. Description of the plugin
+msgid "Integrates myCRED points management system with Ultimate Member."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ultimate Member"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://ultimatemember.com/"
+msgstr ""
+
+#: includes/admin/templates/hook-widget.php:5
+msgid "No options available"
+msgstr ""
+
+#: includes/admin/templates/hook-widget.php:24
+msgid "Deduct %s"
+msgstr ""
+
+#: includes/admin/templates/hook-widget.php:26
+msgid "Award %s"
+msgstr ""
+
+#: includes/admin/templates/hook-widget.php:37
+msgid "Limit"
+msgstr ""
+
+#: includes/admin/templates/hook-widget.php:51
+msgid "Log template"
+msgstr ""
+
+#: includes/admin/templates/role/mycred.php:5
+msgid "Can transfer points to other members?"
+msgstr ""
+
+#: includes/admin/templates/role/mycred.php:6
+msgid "Can not receive points from other members?"
+msgstr ""
+
+#: includes/admin/templates/role/mycred.php:11
+msgid "Can transfer %_plural% to other members?"
+msgstr ""
+
+#: includes/admin/templates/role/mycred.php:12
+msgid "Can not receive %_plural% from other members?"
+msgstr ""
+
+#: includes/core/class-account.php:47
+msgid "My points"
+msgstr ""
+
+#: includes/core/class-account.php:50
+msgid "My %_plural%"
+msgstr ""
+
+#: includes/core/class-account.php:186
+msgid "Invalid amount."
+msgstr ""
+
+#: includes/core/class-account.php:190
+msgid "The user does not exist."
+msgstr ""
+
+#: includes/core/class-account.php:194
+msgid "You do not have enough balance."
+msgstr ""
+
+#: includes/core/class-account.php:210
+msgid ""
+"That user can not receive <span class=\"um-points-wrap\">%_plural%</span>."
+msgstr ""
+
+#: includes/core/class-account.php:214
+msgid ""
+"You can not transfer <span class=\"um-points-wrap\">%_plural%</span> to "
+"yourself."
+msgstr ""
+
+#: includes/core/class-account.php:218
+msgid ""
+"You are not allowed to transfer <span class=\"um-points-wrap\">%_plural%</"
+"span>."
+msgstr ""
+
+#: includes/core/class-account.php:247
+msgid "%plural% transferred successfully"
+msgstr ""
+
+#: includes/core/class-admin.php:33
+msgid "myCRED License Key"
+msgstr ""
+
+#: includes/core/class-admin.php:45
+msgid "Account Tab"
+msgstr ""
+
+#: includes/core/class-admin.php:46
+msgid "Show or hide an account tab that shows the user balance"
+msgstr ""
+
+#: includes/core/class-admin.php:51
+msgid "Show user affiliate link in account page"
+msgstr ""
+
+#: includes/core/class-admin.php:57
+msgid "Choose point types to show in account page"
+msgstr ""
+
+#: includes/core/class-admin.php:70
+msgid "Width / height of badge in pixels"
+msgstr ""
+
+#: includes/core/class-admin.php:71
+msgid "Badges appearing in profile tab"
+msgstr ""
+
+#: includes/core/class-admin.php:77
+msgid "Show user badges in profile header?"
+msgstr ""
+
+#: includes/core/class-admin.php:82
+msgid "Show user badges in Member Directories?"
+msgstr ""
+
+#: includes/core/class-admin.php:90 includes/core/class-admin.php:129
+msgid "myCRED"
+msgstr ""
+
+#: includes/core/class-fields.php:157
+msgid "myCRED Balance"
+msgstr ""
+
+#: includes/core/class-fields.php:164
+msgid "You must provide a title"
+msgstr ""
+
+#: includes/core/class-fields.php:186 includes/core/class-fields.php:189
+msgid "myCRED Progress"
+msgstr ""
+
+#: includes/core/class-fields.php:199 includes/core/class-fields.php:202
+msgid "myCRED Badges"
+msgstr ""
+
+#: includes/core/class-fields.php:212 includes/core/class-fields.php:215
+#: includes/core/class-member-directory.php:171
+msgid "myCRED Rank"
+msgstr ""
+
+#: includes/core/class-fields.php:249 includes/core/class-fields.php:256
+msgid "Points Type"
+msgstr ""
+
+#: includes/core/class-fields.php:249 includes/core/class-fields.php:256
+msgid ""
+"You can add or delete point type on the [Points > Settings >Point Types] "
+"admin page."
+msgstr ""
+
+#: includes/core/class-hooks.php:44
+msgid "Ultimate Member - Registration"
+msgstr ""
+
+#: includes/core/class-hooks.php:45
+msgid "Award %_plural% for register hooks"
+msgstr ""
+
+#: includes/core/class-hooks.php:51
+msgid "Ultimate Member - Login"
+msgstr ""
+
+#: includes/core/class-hooks.php:52
+msgid "Award %_plural% for login hooks"
+msgstr ""
+
+#: includes/core/class-hooks.php:58
+msgid "Ultimate Member - Profile"
+msgstr ""
+
+#: includes/core/class-hooks.php:59
+msgid "Award %_plural% for profile hooks"
+msgstr ""
+
+#: includes/core/class-hooks.php:65
+msgid "Ultimate Member - Account"
+msgstr ""
+
+#: includes/core/class-hooks.php:66
+msgid "Award %_plural% for account hooks"
+msgstr ""
+
+#: includes/core/class-hooks.php:72
+msgid "Ultimate Member - Member Directory"
+msgstr ""
+
+#: includes/core/class-hooks.php:73
+msgid "Award %_plural% for Member Directory hooks"
+msgstr ""
+
+#: includes/core/class-hooks.php:92
+msgid "Ultimate Member - Completing registration"
+msgstr ""
+
+#: includes/core/class-hooks.php:93
+msgid "Ultimate Member - Logging via UM Login Form"
+msgstr ""
+
+#: includes/core/class-hooks.php:94
+msgid "Ultimate Member - Uploading Profile Photo"
+msgstr ""
+
+#: includes/core/class-hooks.php:95
+msgid "Ultimate Member - Uploading Cover Photo"
+msgstr ""
+
+#: includes/core/class-hooks.php:96
+msgid "Ultimate Member - Updating Profile"
+msgstr ""
+
+#: includes/core/class-hooks.php:97
+msgid "Ultimate Member - Updating Account"
+msgstr ""
+
+#: includes/core/class-hooks.php:98
+msgid "Ultimate Member - Using Search in Members Directory"
+msgstr ""
+
+#: includes/core/class-member-directory.php:155
+msgid "Most %s"
+msgstr ""
+
+#: includes/core/class-member-directory.php:156
+msgid "Least %s"
+msgstr ""
+
+#: includes/core/class-member-directory.php:185
+msgid "Rank"
+msgstr ""
+
+#: includes/core/class-member-directory.php:234
+#: includes/core/class-member-directory.php:235
+msgid "Balance"
+msgstr ""
+
+#: includes/core/class-member-directory.php:311
+msgid "Hide myCRED badges"
+msgstr ""
+
+#: includes/core/class-notifications.php:62
+msgid "User awarded points for action"
+msgstr ""
+
+#: includes/core/class-notifications.php:63
+msgid "When I receive points by completing an action"
+msgstr ""
+
+#: includes/core/class-notifications.php:67
+msgid "User deducted points for action"
+msgstr ""
+
+#: includes/core/class-notifications.php:68
+msgid "Points deducted when incompleted an action"
+msgstr ""
+
+#: includes/core/class-notifications.php:72
+msgid "User receives points from another person"
+msgstr ""
+
+#: includes/core/class-notifications.php:73
+msgid "When I receive points balance from another member"
+msgstr ""
+
+#: includes/core/class-notifications.php:80
+msgid "User awarded <span class=\"um-points-wrap\">%_plural%</span> for action"
+msgstr ""
+
+#: includes/core/class-notifications.php:81
+msgid ""
+"When I receive <span class=\"um-points-wrap\">%_plural%</span> by completing "
+"an action"
+msgstr ""
+
+#: includes/core/class-notifications.php:85
+msgid ""
+"User deducted <span class=\"um-points-wrap\">%_plural%</span> for action"
+msgstr ""
+
+#: includes/core/class-notifications.php:86
+msgid ""
+"<span class=\"um-points-wrap\">%plural%</span> deducted when incompleted an "
+"action"
+msgstr ""
+
+#: includes/core/class-notifications.php:90
+msgid ""
+"User receives <span class=\"um-points-wrap\">%_plural%</span> from another "
+"person"
+msgstr ""
+
+#: includes/core/class-notifications.php:91
+msgid ""
+"When I receive <span class=\"um-points-wrap\">%_plural%</span> balance from "
+"another member"
+msgstr ""
+
+#: includes/core/class-notifications.php:144
+msgid "%s: %s"
+msgstr ""
+
+#: includes/core/class-points.php:39 includes/core/class-points.php:52
+msgid "%1$s <span class=\"um-points-wrap\">%%singular%%</span>"
+msgid_plural "%1$s <span class=\"um-points-wrap\">%%plural%%</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/core/class-points.php:43
+msgid "%1$s <span class=\"um-points-wrap\">%2$s</span>"
+msgid_plural "%1$s <span class=\"um-points-wrap\">%3$s</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/core/class-points.php:47
+msgid "%1$s <span class=\"um-points-wrap\">%4$s</span>"
+msgstr ""
+
+#: includes/core/class-points.php:102
+msgid "%plural% received!"
+msgstr ""
+
+#: includes/core/class-points.php:103
+msgid "%plural% sent!"
+msgstr ""
+
+#: includes/core/class-points.php:150
+msgid "Earned %s via Ultimate Member( %s )"
+msgstr ""
+
+#: includes/core/class-profile.php:40
+msgid "Badges"
+msgstr ""
+
+#: includes/core/class-profile.php:68
+msgid "Your Badges"
+msgstr ""
+
+#: includes/core/class-profile.php:68
+msgid "%s's Badges"
+msgstr ""
+
+#: includes/core/class-profile.php:69
+msgid "All Badges"
+msgstr ""
+
+#: includes/core/class-setup.php:46
+msgid ""
+"You have received <strong>{mycred_points}</strong> for <strong>{mycred_task}"
+"</strong>"
+msgstr ""
+
+#: includes/core/class-setup.php:47
+msgid ""
+"<strong>{mycred_points}</strong> deduction for <strong>{mycred_task}</strong>"
+msgstr ""
+
+#: includes/core/class-setup.php:48
+msgid ""
+"You have just got <strong>{mycred_points}</strong> from "
+"<strong>{mycred_sender}</strong>"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-account.php:26
+msgid "Account Updated"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-account.php:27
+msgid "updating account"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-account.php:37
+#: includes/core/hooks/um-mycred-login.php:37
+#: includes/core/hooks/um-mycred-member-directory.php:37
+#: includes/core/hooks/um-mycred-profile.php:55
+#: includes/core/hooks/um-mycred-register.php:37
+msgid "%%plural%% for %s."
+msgstr ""
+
+#: includes/core/hooks/um-mycred-login.php:26
+msgid "Logging via Ultimate Member Login Form"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-login.php:27
+msgid "logging in"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-member-directory.php:26
+msgid "Use Search"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-member-directory.php:27
+msgid "using search member form"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:26
+msgid "Upload Profile Photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:27
+msgid "adding profile photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:30
+msgid "Remove Profile Photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:31
+msgid "removing profile photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:35
+msgid "Upload Cover Photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:36
+msgid "adding cover photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:39
+msgid "Remove Cover Photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:40
+msgid "removing cover photo"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:44
+msgid "Update Profile"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-profile.php:45
+msgid "updating profile"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-register.php:26
+msgid "Completing Registration"
+msgstr ""
+
+#: includes/core/hooks/um-mycred-register.php:27
+msgid "signing up"
+msgstr ""
+
+#: templates/account_points.php:18
+msgid "My Balance"
+msgstr ""
+
+#: templates/account_points.php:34
+msgid "Transfer Balance"
+msgstr ""
+
+#: templates/account_points.php:36
+msgid "Enter the user to which you want to transfer"
+msgstr ""
+
+#: templates/account_points.php:38
+msgid "Username, e-mail, or ID"
+msgstr ""
+
+#: templates/account_points.php:44
+msgid "You can transfer points to another user. "
+msgstr ""
+
+#: templates/account_points.php:45
+msgid "Select a point type:"
+msgstr ""
+
+#: templates/account_points.php:48
+msgid "You can transfer %s to another user. "
+msgstr ""
+
+#: templates/account_points.php:49
+msgid "You have %s now."
+msgstr ""
+
+#: templates/account_points.php:51
+msgid "You can not transfer points."
+msgstr ""
+
+#: templates/account_points.php:58
+msgid "Point type"
+msgstr ""
+
+#: templates/account_points.php:61
+msgid "%s (up to %s)"
+msgstr ""
+
+#: templates/account_points.php:70
+msgid "Enter amount below:"
+msgstr ""
+
+#: templates/account_points.php:75
+msgid "Confirm Transfer"
+msgstr ""
+
+#: templates/account_points.php:77
+msgid "This is not reversible once you click confirm transfer."
+msgstr ""
+
+#: templates/account_points.php:88
+msgid "My Referral Link"
+msgstr ""
+
+#: templates/badges.php:30
+msgid "%s"
+msgstr ""
+
+#: templates/badges.php:85
+msgid "%s - Level %s"
+msgstr ""
+
+#: templates/badges.php:96
+msgctxt "Gained|Lost x \"point_type\" for \"reference\""
+msgid "%1$s %2$s \"%3$s\" for \"<span class=\"um-points-wrap\">%4$s</span>\""
+msgstr ""
+
+#: templates/badges.php:100
+msgctxt "Gained|Lost \"point_type\" for \"reference\" x times"
+msgid ""
+"%1$s \"%3$s\" for \"<span class=\"um-points-wrap\">%4$s</span>\" %5$s times"
+msgstr ""
+
+#: templates/badges.php:108
+msgid "Lost"
+msgstr ""
+
+#: templates/badges.php:108
+msgid "Gained"
+msgstr ""
+
+#: templates/badges.php:108
+msgid "Gain"
+msgstr ""
+
+#: um-mycred.php:45 um-mycred.php:61
+msgid ""
+"The <strong>%s</strong> extension requires the Ultimate Member plugin to be "
+"activated to work properly. You can download it <a href=\"https://wordpress."
+"org/plugins/ultimate-member\">here</a>"
+msgstr ""
+
+#: um-mycred.php:69
+msgid ""
+"Sorry. You must activate the <strong>myCRED</strong> plugin to use the %s."
+msgstr ""

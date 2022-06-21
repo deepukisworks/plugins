@@ -1,0 +1,80 @@
+
+.main_data_cls {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 3px 10px 0px #adadad;
+      display: flow-root;
+}
+.main_data_cls div#example_length {
+    width: 50%;
+    float: left;
+}
+.main_data_cls div#example_filter {
+    width: 50%;
+    float: left;
+      margin-bottom: 20px;
+}
+.main_data_cls div#example_filter label {
+    float: right;
+  font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.main_data_cls div#example_length label {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.main_data_cls div#example_filter label input {
+    margin-left: 10px;
+}
+.main_data_cls table {
+    border: 1px solid #c1c1c1;
+}
+.main_data_cls table thead th {
+    border-bottom: 1px solid #c1c1c1;
+    padding: 8px 0px;
+    background: #e8e8e8;
+}
+.main_data_cls table tbody tr td {
+    border-bottom: 1px solid #ccc;
+    padding: 7px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.main_data_cls div#example_info {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+      font-size: 14px;
+    font-weight: 500;
+}
+.main_data_cls div#example_paginate {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+  text-align: right;
+}
+.main_data_cls div#example_paginate a.paginate_button {
+    color: #fff;
+    font-size: 16px;
+    background: black;
+    font-weight: 600;
+    margin: 0px 5px;
+    padding: 2px 8px;
+}
+.main_data_cls div#example_paginate a.previous {
+    background: transparent;
+    color: black;
+}
+.main_data_cls div#example_paginate a.next {
+    background: transparent;
+    color: black;
+}
+
+
+
+

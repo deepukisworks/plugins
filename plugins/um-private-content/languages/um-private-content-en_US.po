@@ -1,0 +1,135 @@
+# Copyright (C) 2020 Ultimate Member
+# This file is distributed under the same license as the Ultimate Member - Private Content plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Member - Private Content 2.0.6\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/um-private-"
+"content\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-12-16T16:24:58+02:00\n"
+"PO-Revision-Date: 2020-12-16 18:57+0200\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Domain: um-private-content\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+
+#. Plugin Name of the plugin
+msgid "Ultimate Member - Private Content"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "http://ultimatemember.com/extensions/private-content"
+msgstr ""
+
+#. Description of the plugin
+msgid "Display private content to logged in users that only they can access."
+msgstr ""
+
+#. Author of the plugin
+msgid "Ultimate Member"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://ultimatemember.com/"
+msgstr ""
+
+#: includes/core/class-private-content-admin.php:44
+msgid ""
+"The predefined template content is set. You could edit it before saving or "
+"leave it as it is."
+msgstr ""
+
+#: includes/core/class-private-content-admin.php:80
+msgid "Private Content for %s"
+msgstr ""
+
+#: includes/core/class-private-content-admin.php:101
+#: includes/core/class-private-content-setup.php:27
+#: includes/core/filters/um-private-content-settings.php:21
+#: includes/core/filters/um-private-content-tabs.php:13
+#: includes/core/um-private-content-init.php:182
+msgid "Private Content"
+msgstr ""
+
+#: includes/core/class-private-content-admin.php:216
+msgid "Private Content pages was generated successfully"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:13
+msgid "Private Content License Key"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:26
+msgid "Generate pages"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:27
+msgid "Generate pages for existing users"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:28
+msgid "Generate pages for already existing users"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:34
+msgid "Private Content Tab Title"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:35
+msgid "This is the title of the tab for show user's private content"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:40
+msgid "Private Content Tab Icon"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:41
+msgid "This is the icon of the tab for show user's private content"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:47
+msgid "Predefined content template"
+msgstr ""
+
+#: includes/core/filters/um-private-content-settings.php:48
+msgid ""
+"Convenient to use if you need to create similar private content for users. "
+"This template is used as a predefined content on Private Content page edit "
+"if the content is empty."
+msgstr ""
+
+#: includes/core/um-private-content-init.php:181
+msgid "Private Contents"
+msgstr ""
+
+#: includes/core/um-private-content-init.php:183
+#: includes/core/um-private-content-init.php:184
+msgid "Add New Private Content"
+msgstr ""
+
+#: includes/core/um-private-content-init.php:185
+msgid "Edit Private Content"
+msgstr ""
+
+#: includes/core/um-private-content-init.php:186
+msgid "You did not create any private contents yet"
+msgstr ""
+
+#: includes/core/um-private-content-init.php:187
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: includes/core/um-private-content-init.php:188
+msgid "Search Private Contents"
+msgstr ""
+
+#: um-private-content.php:44 um-private-content.php:60
+msgid ""
+"The <strong>%s</strong> extension requires the Ultimate Member plugin to be "
+"activated to work properly. You can download it <a href=\"https://wordpress."
+"org/plugins/ultimate-member\">here</a>"
+msgstr ""

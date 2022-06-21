@@ -1,0 +1,1 @@
+<a href="{author_profile}" class="um-link">{author_name}</a> <?php _e( 'has posted a new', 'um-activity' );?> <a href="{post_url}" class="um-link"><?php _e( 'job', 'um-activity' );?></a>. <span class="post-meta"><a href="{post_url}">{post_title}{post_content}</a></span>

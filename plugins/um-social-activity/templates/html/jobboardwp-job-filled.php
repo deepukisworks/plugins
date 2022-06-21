@@ -1,0 +1,1 @@
+<a href="{post_url}" class="um-link"><?php _e( 'Job', 'um-activity' );?></a> <?php _e( 'has been marked as filled.', 'um-activity' );?>
