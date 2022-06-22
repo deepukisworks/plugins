@@ -296,9 +296,17 @@ if (!class_exists('POP_front')) {
           </script>
           <div class="description_block">
             <div class="popup-card-wrapper">
-              <div class="honey-block">
-			  <button data-type="drophoney" class="love click_animation p-0"><input id="post_<?php echo $post_id;?>" type="checkbox" class="LoveCheck">
-                <label for="post_<?php echo $post_id;?>" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount"> <?php echo intval(get_post_meta($post_id, 'love_me_like', true)); ?></span></button>
+			<?php
+			 $honey_like_count=intval(get_post_meta($post_id, 'love_me_like', true));
+			 if($honey_like_count==0){
+				 $class_="";
+			 }else{
+				 $class_="liked";
+			 }
+			?>
+               <div class="honey-block">
+			  <button data-type="drophoney" class="love click_animation p-0 <?php echo $class_;?>"><input id="post_<?php echo $post_id;?>" type="checkbox" class="LoveCheck">
+                <label for="post_<?php echo $post_id;?>" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount" id="LoveCount_<?php echo $post_id;?>"> <?php echo $honey_like_count; ?></span></button>
                
               </div>
               <div class="honey_pot">

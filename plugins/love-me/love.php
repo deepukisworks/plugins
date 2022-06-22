@@ -312,8 +312,14 @@ if ( ! class_exists( 'Love_me' ) ) :
                     $checked = 'checked';
                 }
             }
+			$honey_like_count=intval(get_post_meta($id_post, 'love_me_like', true));
+			 if($honey_like_count==0){
+				 $class_="";
+			 }else{
+				 $class_="liked";
+			 }
 
-            return '<button data-type="drophoney" class="love click_animation p-0'.$class.'"><input '.$checked.' id="post_'.$id_post.'" type="checkbox" class="LoveCheck"/>
+            return '<button data-type="drophoney" class="love click_animation p-0'.$class_.'"><input '.$checked.' id="post_'.$id_post.'" type="checkbox" class="LoveCheck"/>
                 <label for="post_'.$id_post.'" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount">'.intval($love).'</span></button><!--/love-->';
         }
 
