@@ -123,11 +123,80 @@ if (!class_exists('POP_front')) {
         ?>
         <div class="again_inner_section">
           <div class="popup-author-wrapper">
-            <div class="addHive-block">
-              <button data-type="addhive" type="button" class="click_animation hover_hue">
-                <img data-type="addhive" src="<?php echo site_url(); ?>/wp-content/uploads/2022/05/Add-to-hive.png">
-              </button>
-            </div>
+             <div class="addHive-block">
+			<?php //global $wpdb;
+			 $user_id = $post->post_author;
+			 
+			if($user_id!=$current_user_id){?>
+				<button data-type="addhive" type="button" class="click_animation hover_hue hivvdropdown_button" data-feed-id="<?php echo $post_id; ?>_fr">
+					<img data-type="addhive" src="<?php echo site_url(); ?>/wp-content/uploads/2022/05/Add-to-hive.png">
+				</button>
+				<div class="hivvdropdown hive_option_<?php echo $post_id; ?>_fr">
+					<div class="hivvdropdown_search">
+						<img src="<?php echo site_url(); ?>/wp-content/uploads/2022/02/Hive.png" class="hive_icon">
+						<input type="text" class="form-control">
+						<img src="<?php echo site_url(); ?>/wp-content/uploads/2022/02/search.png" class="search_icon">
+					</div>
+					<ul class="hivvdropdown_list">
+
+					  <?php
+					
+					// $current_user_id= imgPATH;
+					$find_selected_category = $wpdb->get_results("SELECT * FROM wp_um_set_priority_by_follower WHERE follower_id=$user_id AND user_id=$current_user_id");
+
+						foreach ($find_selected_category as $selected_categories) {
+							$categories_id = $selected_categories->follower_cat_id;
+							$selected_ids = explode(',', $categories_id);
+							for ($i = 1; $i < count($selected_ids); $i++) {
+								$find_images = $wpdb->get_results("SELECT * FROM wp_category_created_by_author WHERE `category_value`='" . $selected_ids[$i] . "' And author_id='" . $current_user_id . "'");
+								//echo '<pre>';print_r($find_images);
+								foreach ($find_images as $selected_image) {
+									$final_category_stickers = $selected_image->category_icons;
+									$category_value = $selected_image->category_value;
+								}
+								$resulted_stickers[] = $final_category_stickers;
+								$resulted_category_value[] = $category_value;
+								
+							}
+							if (empty($resulted_stickers)) {
+								$site_url = site_url();
+								
+								$url = $site_url . '/wp-content/uploads/2022/05/Hives-Sort-later.png';
+								$new_images = '<img src="'.$url.'">';
+								?>
+								<li class="nav-item">
+										<input type="checkbox" id="" name="" value="">
+										<label for="hive1">
+											<?php echo $new_images;?>
+											<span><?php echo $category_name1;?></span>
+										</label>
+										<input type="checkbox" id="" name="" value="">
+									</li>
+									<?php
+							} else {
+								for ($i = 0; $i < count($resulted_stickers); $i++) {
+									$new_images = '<img src=/images/' . $resulted_stickers[$i] . '>';
+									$resulted_category_name =  get_cat_name($resulted_category_value[$i]);
+									?>
+									
+									<li class="nav-item">
+										<input type="checkbox" id="" name="" value="">
+										<label for="hive1">
+											<?php echo $new_images;?>
+											<span><?php echo $resulted_category_name;?></span>
+										</label>
+										<input type="checkbox" id="" name="" value="">
+									</li>
+									<?php
+								}
+							}
+						}
+						?>
+					   
+					</ul>
+				</div>
+			<?php }?>
+			</div>
             <div class="author-block">
               <div class="author-name-block">
                 <div div class="popup-author-img">
@@ -412,6 +481,11 @@ if (!class_exists('POP_front')) {
                       }, 1000);
 
                     });
+					$('.hivvdropdown_button').click(function() {
+						$('.hivvdropdown').hide();
+						var feed_id = $(this).attr('data-feed-id');
+						$('.hive_option_' + feed_id).toggle('slow');
+					});
                   </script>
                   <?php
                   echo "<div id='timer'>

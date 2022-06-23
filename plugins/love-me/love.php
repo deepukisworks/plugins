@@ -353,8 +353,13 @@ if ( ! class_exists( 'Love_me' ) ) :
             if(empty($love_ip)) {
 
                 $love_ip = array($_SERVER['REMOTE_ADDR']);
-
-                $love = $love + 1.5;
+				$author_id = get_post_field( 'post_author', $id_post);
+				$goes_to_user_profile=(1.5/100)*25;
+				$goes_to_post=(1.5/100)*75;
+				$created_post_author = get_user_meta($author_id, 'mycred_default', true);
+				$new_author_honey_count=$created_post_author+$goes_to_user_profile;
+				$check = update_user_meta($author_id, 'mycred_default', $new_author_honey_count);
+				 $love = $love + $goes_to_post;
                 update_post_meta($id_post, 'love_me_like', $love);
 
                 update_post_meta($id_post, 'love_me_ips', serialize($love_ip));
