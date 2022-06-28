@@ -13,11 +13,9 @@
  *
  * @package AjaxLoadMore
  */
-
 define( 'ALM_VERSION', '5.5.1' );
 define( 'ALM_RELEASE', 'January 10, 2022' );
 define( 'ALM_STORE_URL', 'https://connekthq.com' );
-
 /**
  * Activation hook - Create table & repeater.
  *
