@@ -318,9 +318,37 @@ if ( ! class_exists( 'Love_me' ) ) :
 			 }else{
 				 $class_="liked";
 			 }
-
+			$precision = 1;
+			 // function number_format_short($n, $precision = 1 ) {
+			  if ($love < 900) {
+				// 0 - 900
+				$n_format = number_format($love, $precision);
+				$n_format=intval($n_format);
+				$suffix = '';
+			  } else if ($love < 900000) {
+				// 0.9k-850k
+				$n_format = number_format($love / 1000, $precision);
+				$suffix = 'K';
+			  } else if ($love < 900000000) {
+				// 0.9m-850m
+				$n_format = number_format($love / 1000000, $precision);
+				$suffix = 'M';
+			  } else if ($love < 900000000000) {
+				// 0.9b-850b
+				$n_format = number_format($love / 1000000000, $precision);
+				$suffix = 'B';
+			  } else {
+				// 0.9t+
+				$n_format = number_format($love / 1000000000000, $precision);
+				$suffix = 'T';
+			  }
+			  if ( $precision > 0 ) {
+				$dotzero = '.' . str_repeat( '0', $precision );
+				$n_format = str_replace( $dotzero, '', $n_format );
+			  }
+			$get_new_data=$n_format . $suffix;
             return '<button data-type="drophoney" class="love click_animation p-0'.$class_.'"><input '.$checked.' id="post_'.$id_post.'" type="checkbox" class="LoveCheck"/>
-                <label for="post_'.$id_post.'" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount">'.intval($love).'</span></button><!--/love-->';
+                <label for="post_'.$id_post.'" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount">'.$get_new_data.'</span></button><!--/love-->';
         }
 
         public function ajax() {

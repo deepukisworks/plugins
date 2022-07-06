@@ -367,6 +367,35 @@ if (!class_exists('POP_front')) {
             <div class="popup-card-wrapper">
 			<?php
 			 $honey_like_count=intval(get_post_meta($post_id, 'love_me_like', true));
+			 $precision = 1;
+			 // function number_format_short($n, $precision = 1 ) {
+			  if ($honey_like_count < 900) {
+				// 0 - 900
+				$n_format = number_format($honey_like_count, $precision);
+				$n_format=intval($n_format);
+				$suffix = '';
+			  } else if ($honey_like_count < 900000) {
+				// 0.9k-850k
+				$n_format = number_format($honey_like_count / 1000, $precision);
+				$suffix = 'K';
+			  } else if ($honey_like_count < 900000000) {
+				// 0.9m-850m
+				$n_format = number_format($honey_like_count / 1000000, $precision);
+				$suffix = 'M';
+			  } else if ($honey_like_count < 900000000000) {
+				// 0.9b-850b
+				$n_format = number_format($honey_like_count / 1000000000, $precision);
+				$suffix = 'B';
+			  } else {
+				// 0.9t+
+				$n_format = number_format($honey_like_count / 1000000000000, $precision);
+				$suffix = 'T';
+			  }
+			  if ( $precision > 0 ) {
+				$dotzero = '.' . str_repeat( '0', $precision );
+				$n_format = str_replace( $dotzero, '', $n_format );
+			  }
+			$get_new_data=$n_format . $suffix;
 			 if($honey_like_count==0){
 				 $class_="";
 			 }else{
@@ -375,7 +404,7 @@ if (!class_exists('POP_front')) {
 			?>
                <div class="honey-block">
 			  <button data-type="drophoney" class="love click_animation p-0 <?php echo $class_;?>"><input id="post_<?php echo $post_id;?>" type="checkbox" class="LoveCheck">
-                <label for="post_<?php echo $post_id;?>" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount" id="LoveCount_<?php echo $post_id;?>"> <?php echo $honey_like_count; ?></span></button>
+                <label for="post_<?php echo $post_id;?>" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount" id="LoveCount_<?php echo $post_id;?>"><?php echo $get_new_data; ?></span></button>
                
               </div>
               <div class="honey_pot">
