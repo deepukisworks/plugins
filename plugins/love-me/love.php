@@ -348,7 +348,7 @@ if ( ! class_exists( 'Love_me' ) ) :
 			  }
 			$get_new_data=$n_format . $suffix;
             return '<button data-type="drophoney" class="love click_animation p-0'.$class_.'"><input '.$checked.' id="post_'.$id_post.'" type="checkbox" class="LoveCheck"/>
-                <label for="post_'.$id_post.'" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount">'.$get_new_data.'</span></button><!--/love-->';
+                <label for="post_'.$id_post.'" class="dashicons dashicons-heart LoveLabel" aria-label="like this" data-type="drophoney"></label><span class="LoveCount" id="LoveCount1_'.$id_post.'">'.$get_new_data.'</span></button><!--/love-->';
         }
 
         public function ajax() {
