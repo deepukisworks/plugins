@@ -21,7 +21,12 @@
                     success: function (results) {
                         $this.removeAttr("disabled");
                         $this.parent().toggleClass('liked');
-                        $this.parent().find('.LoveCount').text(parseInt (results.likes));
+						if(results.likes=='1.5'){
+							var likes_count=parseInt(results.likes);
+						}else{
+							var likes_count=results.likes;
+						}
+                        $this.parent().find('.LoveCount').text(likes_count+''+results.suffix);
                         $this.parent().find('.intitule').text(results.text);
 						$('.loader').hide();
                     },

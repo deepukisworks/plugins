@@ -373,6 +373,7 @@ if ( ! class_exists( 'Love_me' ) ) :
             $love_ip = get_post_meta( $id_post, 'love_me_ips', true );
             if(empty($love_ip)) {
                 add_post_meta($id_post, 'love_me_ips', '', true);
+				add_post_meta($id_post, 'post_points_after_like', $love, true);
             }
             $ip_client = $_SERVER['REMOTE_ADDR'];
 
@@ -389,7 +390,7 @@ if ( ! class_exists( 'Love_me' ) ) :
 				$check = update_user_meta($author_id, 'mycred_default', $new_author_honey_count);
 				 $love = $love + $goes_to_post;
                 update_post_meta($id_post, 'love_me_like', $love);
-
+				update_post_meta($id_post, 'post_points_after_like', $love);
                 update_post_meta($id_post, 'love_me_ips', serialize($love_ip));
             } else {
                /* $love_ip = unserialize($love_ip);
@@ -409,8 +410,39 @@ if ( ! class_exists( 'Love_me' ) ) :
                     update_post_meta($id_post, 'love_me_ips', serialize($love_ip));
                 }*/
             }
-            $message['likes'] = $love;
-
+            $created_post_author = get_post_meta($id_post, 'post_points_after_like', true);
+			//echo $created_post_author.'sdfsfd';
+			 $precision = 1;
+			 // function number_format_short($n, $precision = 1 ) {
+			  if ($created_post_author < 900) {
+				// 0 - 900
+				$n_format = number_format($created_post_author, $precision);
+				$n_format=intval($n_format);
+				$suffix = '';
+			  } else if ($created_post_author < 900000) {
+				// 0.9k-850k
+				$n_format = number_format($created_post_author / 1000, $precision);
+				$suffix = 'K';
+			  } else if ($created_post_author < 900000000) {
+				// 0.9m-850m
+				$n_format = number_format($created_post_author / 1000000, $precision);
+				$suffix = 'M';
+			  } else if ($created_post_author < 900000000000) {
+				// 0.9b-850b
+				$n_format = number_format($created_post_author / 1000000000, $precision);
+				$suffix = 'B';
+			  } else {
+				// 0.9t+
+				$n_format = number_format($created_post_author / 1000000000000, $precision);
+				$suffix = 'T';
+			  }
+			  if ( $precision > 0 ) {
+				$dotzero = '.' . str_repeat( '0', $precision );
+				$n_format = str_replace( $dotzero, '', $n_format );
+			  }
+			$created_post_author=$n_format;
+            $message['likes'] = $created_post_author;
+            $message['suffix'] = $suffix;
 
 
 
